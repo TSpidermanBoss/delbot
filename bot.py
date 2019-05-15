@@ -2,7 +2,7 @@ from pyrogram import Client, Filters
 
 
 
-app = Client('890398475:AAFKe-e5H2owXvzoB-AlIpy3ELE-0f7OoNs')
+app = Client('my_account')
 
 
 
