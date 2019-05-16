@@ -1,5 +1,5 @@
 from pyrogram import Client, Filters
-app = Client('765108996:AAGYA2lsT6yw1q5SEx1PXesPWYdwb8RBivc')
+app = Client('839678284:AAEb1D-EroMEA-VUuoSxp2CPYNd53hdPCh8')
 @app.on_message(Filters.chat('jetline1') & Filters.text)
 def forawrd(client, message):
     files = open("sure.txt" , "r")
