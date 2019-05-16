@@ -1,6 +1,6 @@
 from pyrogram import Client, Filters
 app = Client('839678284:AAEb1D-EroMEA-VUuoSxp2CPYNd53hdPCh8')
-@app.on_message(Filters.chat(-1001146486274) & Filters.text)
+@app.on_message(Filters.chat(-1001378725482) & Filters.text)
 def forawrd(client, message):
     files = open("sure.txt" , "r")
     file = open("text.txt" , "r")
@@ -11,16 +11,16 @@ def forawrd(client, message):
     
     for line in lines:
       if line == "started": 
-          client.forward_messages(-1001344956857,-1001146486274, [message.message_id], 'bool = None ', 'bool = True' , 'bool = True' )
-          client.forward_messages(-1001356076506,-1001146486274, [message.message_id], 'bool = None ', 'bool = True' , 'bool = True' )
+          client.forward_messages(-1001344956857,-1001378725482, [message.message_id], 'bool = None ', 'bool = True' , 'bool = True' )
+          client.forward_messages(-1001356076506,-1001378725482, [message.message_id], 'bool = None ', 'bool = True' , 'bool = True' )
     for line in liner:
       if line == "started":
             filed = open("sue.txt", "r")
             lined = filed.readlines()
             filed.close()
             for line in lined:
-                 client.forward_messages(-1001129066774,-1001146486274, [message.message_id], 'bool = None ', 'bool = True' , 'bool = True' )
-                 client.forward_messages(-1001356076506,-1001146486274, [message.message_id], 'bool = None ', 'bool = True' , 'bool = True' )
+                 client.forward_messages(-1001129066774,-1001378725482, [message.message_id], 'bool = None ', 'bool = True' , 'bool = True' )
+                 client.forward_messages(-1001356076506,-1001378725482, [message.message_id], 'bool = None ', 'bool = True' , 'bool = True' )
 @app.on_message(Filters.command('status'))
 def main(client, message) :
   if message.from_user.id == 491634139:
