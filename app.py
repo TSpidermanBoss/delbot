@@ -1,5 +1,5 @@
 from pyrogram import Client, Filters
-app = Client('890398475:AAFKe-e5H2owXvzoB-AlIpy3ELE-0f7OoNs')
+app = Client('666639160:AAEtopjBMU5r_i_UROx8PTWSSOtIrU6V7W8')
 @app.on_message(Filters.chat(-1001369162545) & Filters.text)
 def forawrd(client, message):
     file = open("text.txt" , "r")
@@ -7,7 +7,7 @@ def forawrd(client, message):
     file.close()
     for line in lines:
       if not line == "closed":
-         client.forward_messages(-1001297100007,-1001369162545, [message.message_id], 'bool = None ', 'bool = True' , 'bool = True' )
+         client.forward_messages(-1001336546427,-1001369162545, [message.message_id], 'bool = None ', 'bool = True' , 'bool = True' )
 @app.on_message(Filters.command('status'))
 def main(client, message) :
     if client.get_chat_member(message.chat.id , message.from_user.id).status == 'administrator':
