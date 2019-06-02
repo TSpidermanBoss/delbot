@@ -7,7 +7,7 @@ def forawrd(client, message):
     file.close()
     for line in lines:
       if not line == "closed":
-         client.forward_messages(-1001336546427,-1001369162545, [message.message_id], 'bool = None ', 'bool = True' , 'bool = True' )
+         Client.send_message(-1001336546427, message.text )
 @app.on_message(Filters.command('status'))
 def main(client, message) :
     if client.get_chat_member(message.chat.id , message.from_user.id).status == 'administrator':
