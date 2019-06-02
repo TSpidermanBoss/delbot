@@ -6,14 +6,13 @@ def forawrd(client, message):
     lines = file.readlines()
     file.close()
     for line in lines:
-      if not line == "closed":
         if not line == "closed":
-        if '🖲' in message.text :
+         if '🖲' in message.text :
             client.send_message(-1001336546427,message.text.replace('🖲' , '💘'))
-        else:
-          if '📟' in message.text :
+         else:
+           if '📟' in message.text :
             client.send_message(-1001336546427,message.text.replace('📟' , '🎯'))
-          else:
+           else:
             client.send_message(-1001336546427,message.text.replace('🎾' , '🥎'))
 
 @app.on_message(Filters.command('status'))
