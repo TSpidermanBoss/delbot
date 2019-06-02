@@ -11,7 +11,7 @@ def forawrd(client, message):
             client.send_message(-1001336546427,message.text.replace('🖲' , '💘'))
          else:
            if '📟' in message.text :
-            client.send_message(-1001336546427,message.text.replace('📟' , '🎯'))
+            client.send_message(-1001336546427,message.text.replace('📟' , '🏝'))
            else:
             client.send_message(-1001336546427,message.text.replace('🎾' , '🥎'))
 
