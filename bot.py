@@ -23,9 +23,12 @@ def forawrd(client, message):
                client.send_message(int(u),message.text.replace('🎾' , '🥎'))
               else:
                 if message.text == 'WD' :
-                  client.send_message(int(u),message.text.replace('WD' , 'WIDE BALL 🙅‍♂️'))
-                else:
-                  client.send_message(int(u),message.text.replace('🎾' , '🥎'))
+                   if message.text == 'WKT' :
+                    client.send_sticker(int(u),'CAADBQADawIAAlrCoBKKtko8XZuaqgI')
+                    client.send_message(int(u),message.text.replace('WKT' , '🚾 Wicket Wicket Wicket 🚾 '))
+                   else:
+                    client.send_message(int(u),message.text.replace('🎾' , '🥎'))
+                  
 
 
 
