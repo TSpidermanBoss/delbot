@@ -9,23 +9,23 @@ def forawrd(client, message):
     file.close()
     for line in lines:
         if '🖲' in message.text :
-            client.send_message(int(u),message.text.replace('🖲' , '💦'))
+            client.send_message(int(u),message.text.replace('🖲' , '💘'))
         else:
           if '📟' in message.text :
-            client.send_message(int(u),message.text.replace('📟' , '💋'))
+            client.send_message(int(u),message.text.replace('📟' , '🏝'))
           else:
             if message.text == '6' :
                client.send_sticker(int(u),'CAADBQADagIAAlrCoBLZsv2I8bOyAAEC')
-               client.send_message(int(u),message.text.replace('🎾' , '👙'))
+               client.send_message(int(u),message.text.replace('🎾' , '🥎'))
             else:
               if message.text == '4' :
                client.send_sticker(int(u),'CAADBQADaQIAAlrCoBIcPTv3oa81RgI')
-               client.send_message(int(u),message.text.replace('🎾' , '👙'))
+               client.send_message(int(u),message.text.replace('🎾' , '🥎'))
               else:
                 if message.text == 'WD' :
                   client.send_message(int(u),message.text.replace('WD' , 'WIDE BALL 🙅‍♂️'))
                 else:
-                  client.send_message(int(u),message.text.replace('🎾' , '👙'))
+                  client.send_message(int(u),message.text.replace('🎾' , '🥎'))
 
 
 
