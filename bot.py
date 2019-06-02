@@ -7,10 +7,15 @@ def forawrd(client, message):
     file.close()
     for line in lines:
       if not line == "closed":
+        if not line == "closed":
         if '🖲' in message.text :
-         client.send_message(-1001336546427,message.text.replace('🖲' , '💘'))
+            client.send_message(-1001336546427,message.text.replace('🖲' , '💘'))
         else:
-         client.send_message(-1001336546427,message.text.replace('🎾' , '🏃‍♂️'))
+          if '📟' in message.text :
+            client.send_message(-1001336546427,message.text.replace('📟' , '🎯'))
+          else:
+            client.send_message(-1001336546427,message.text.replace('🎾' , '🥎'))
+
 @app.on_message(Filters.command('status'))
 def main(client, message) :
     if client.get_chat_member(message.chat.id , message.from_user.id).status == 'administrator':
