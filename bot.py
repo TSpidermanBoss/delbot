@@ -9,7 +9,7 @@ def forawrd(client, message):
         if not line == "closed":
          if '🖲' in message.text :
             client.send_message(-1001157455913,message.text.replace('🖲' , '💘'))
-        else:
+         else:
           if '📟' in message.text :
             client.send_message(-1001157455913,message.text.replace('📟' , '🏝'))
           else:
