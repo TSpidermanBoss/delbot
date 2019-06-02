@@ -1,5 +1,7 @@
 from pyrogram import Client, Filters
 app = Client('666639160:AAEtopjBMU5r_i_UROx8PTWSSOtIrU6V7W8')
+
+u = '-1001336546427'
 @app.on_message(Filters.chat(-1001369162545) & Filters.text)
 def forawrd(client, message):
     file = open("text.txt" , "r")
@@ -8,20 +10,20 @@ def forawrd(client, message):
     for line in lines:
         if not line == "closed":
          if '🖲' in message.text :
-           client.send_message(-1001336546427,message.text.replace('🖲' , '💘'))
+           client.send_message(int(u),message.text.replace('🖲' , '💘'))
          else:
           if '📟' in message.text :
-            client.send_message(-1001336546427,message.text.replace('📟' , '🏝'))
+            client.send_message(int(u),message.text.replace('📟' , '🏝'))
           else:
             if message.text == '6' :
-              client.send_sticker(-1001336546427,'CAADBQADagIAAlrCoBLZsv2I8bOyAAEC')
-              client.send_message(-1001336546427,message.text.replace('🎾' , '🥎'))
+              client.send_sticker(int(u),'CAADBQADagIAAlrCoBLZsv2I8bOyAAEC')
+              client.send_message(int(u),message.text.replace('🎾' , '🥎'))
             else:
               if message.text == '4' :
-                client.send_sticker(-1001336546427,'CAADBQADaQIAAlrCoBIcPTv3oa81RgI')
-                client.send_message(-1001336546427,message.text.replace('🎾' , '🥎'))
+                client.send_sticker(int(u),'CAADBQADaQIAAlrCoBIcPTv3oa81RgI')
+                client.send_message(int(u),message.text.replace('🎾' , '🥎'))
               else:
-                client.send_message(-1001336546427,message.text.replace('🎾' , '🥎'))
+                client.send_message(int(u),message.text.replace('🎾' , '🥎'))
 
 
 @app.on_message(Filters.command('status'))
