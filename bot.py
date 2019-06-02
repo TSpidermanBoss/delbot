@@ -8,14 +8,14 @@ def forawrd(client, message):
     for line in lines:
         if not line == "closed":
          if '🖲' in message.text :
-            client.send_message(-1001157455913,message.text.replace('🖲' , '💘'))
+           client.send_message(-1001157455913,message.text.replace('🖲' , '💘'))
          else:
           if '📟' in message.text :
             client.send_message(-1001157455913,message.text.replace('📟' , '🏝'))
           else:
             if message.text == '6' :
-               client.send_sticker(-1001336546427,'CAADBQADagIAAlrCoBLZsv2I8bOyAAEC')
-               client.send_message(-1001336546427,message.text.replace('🎾' , '🥎'))
+              client.send_sticker(-1001336546427,'CAADBQADagIAAlrCoBLZsv2I8bOyAAEC')
+              client.send_message(-1001336546427,message.text.replace('🎾' , '🥎'))
             else:
               if message.text == '4' :
                 client.send_sticker(-1001336546427,'CAADBQADaQIAAlrCoBIcPTv3oa81RgI')
