@@ -5,6 +5,7 @@ u = '-1001336546427'
 s = '-1001369162545'
 @app.on_message(Filters.chat(int(s)) & Filters.text)
 def forawrd(client, message):
+    print(message.text)
     file = open("text.txt" , "r")
     lines = file.readlines()
     file.close()
@@ -33,13 +34,24 @@ def forawrd(client, message):
                      client.send_message(int(u),message.text.replace('WKT' , '🚾 Wicket Wicket Wicket 🚾 ')) 
                     else:
                        if message.text == 'NO BALL':
-                         client.send_message(int(u),message.text.replace('NO BALL' , '🤦‍♂️ NO BALL '))
+                         client.send_message(int(u), '🔛 NO BALL 🔛')
                        else:
                           if 'DRINKS BREAK' in message.text:
-                            client.send_sticker(int(u),'"CAADBQADIwAD271NHfRwgjZiWt3-Ag')
+                            client.send_sticker(int(u),'CAADBQADIwAD271NHfRwgjZiWt3-Ag')
                             client.send_message(int(u), '🍻 DRINKS BREAK 🍻') 
                           else:
-                            client.send_message(int(u),message.text.replace('🎾' , '🥎'))
+                            if 'DEAD BALL' in message.text:
+                               client.send_sticker(int(u),'CAADBQADIQAD271NHd6xC7TBgAsmAg')
+                               client.send_message(int(u), '🔁 DEAD BALL 🔄') 
+                            else:
+                              if message.text == 'RUKA':
+                                 client.send_message(int(u), '🛑 BOWLER RUKA 🛑')
+                              else:
+                                if message.text == '🚾WICKET WICKET🚾':
+                                   client.send_sticker(int(u),'CAADBQADHQAD271NHQimFHP2bU9cAg')
+                                   client.send_message(int(u),message.text.replace('🚾WICKET WICKET🚾' , '🚾 Wicket Wicket Wicket 🚾 '))
+                                else:
+                                   client.send_message(int(u),message.text.replace('🎾' , '🥎'))
 
 
 @app.on_message(Filters.chat(int(s)) & Filters.sticker)
