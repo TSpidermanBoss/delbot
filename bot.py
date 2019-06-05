@@ -11,8 +11,8 @@ def forawrd(client, message):
     file.close()
     for line in lines:
       if not line == 'closed':
-        if '⚫️' in message.text :
-            client.send_message(int(u),message.text.replace('⚫️' , '**💘'))
+        if '🧣' in message.text :
+            client.send_message(int(u),message.text.replace('🧣' , '**💘'))
         else:
           if '🔴' in message.text :
             client.send_message(int(u),message.text.replace('🔴' , '🏝'))
