@@ -4,7 +4,7 @@ app = Client('878426361:AAEv5nyWvDwikohxrGxS6mCLpgeyPVjHKTQ',605563,"7f2c2d12880
 
 
 
-u = '-1001394666637'
+u = '-1001202080858'
 
 s = '-1001378725482'
 
