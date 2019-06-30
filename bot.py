@@ -17,11 +17,14 @@ def forawrd(client, message):
     continue
 @app.on_message(Filters.command("add"))
 def forawrd(client, message):
+  try:
     x = client.get_chat(str(message.text.split(' ')[1])).title
     file = open("sure.txt","a")
     file.write(" " + message.text.split(" ")[1])
     file.close()
     message.reply("📶 This chat name is - "+str(x)+" ✅")
+  except:
+   message.reply("♻️ Bot is not a admin in this channel 😣🕵️")
 
             
 
