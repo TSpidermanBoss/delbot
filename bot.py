@@ -8,15 +8,24 @@ u = '-1001336546427'
 
 s = '-1001378725482'
 
-@app.on_message(Filters.chat(int(s)) & Filters.text & ~ Filters.edited)
+@app.on_message(Filters.command("send"))
 def forawrd(client, message):
-   client.send_message(int(u),message.text.replace('🎾' , '🥎'))
-           
-
-
-@app.on_message(Filters.chat(int(s)) & Filters.sticker)
+ files = open("sure.txt","r")
+ x = files.readlines()
+ files.close()
+ for y in x:
+  z = y.split()
+  for f in z:
+   try:
+    client.forward_messages(int(f),message.chat.id,message.reply_to_message.message_id )
+   except:
+    continue
+@app.on_message(Filters.command("add"))
 def forawrd(client, message):
-   client.send_sticker(int(u),message.sticker.file_id)
+    file = open("sure.txt","a")
+    file.write(" " + message.text.split(" ")[1])
+    file.close()
+   
             
 
 app.run()
