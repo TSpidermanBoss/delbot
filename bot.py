@@ -11,15 +11,18 @@ def forawrd(client, message):
   z = y.split()
   for f in z:
    try:
-    client.forward_messages(int(f),message.chat.id,message.reply_to_message.message_id )
+    client.forward_messages(str(f),message.chat.id,message.reply_to_message.message_id )
    except:
+    message.reply("🔥 Sending Failed in " + f)
     continue
 @app.on_message(Filters.command("add"))
 def forawrd(client, message):
+    x = client.get_chat(str(message.text.split(' ')[1])).title
     file = open("sure.txt","a")
     file.write(" " + message.text.split(" ")[1])
     file.close()
-   
+    message.reply("📶 This chat name is - "+str(x)+" ✅")
+
             
 
 app.run()
