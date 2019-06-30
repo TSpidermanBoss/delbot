@@ -22,7 +22,7 @@ def forawrd(client, message):
     file = open("sure.txt","a")
     file.write(" " + message.text.split(" ")[1])
     file.close()
-    message.reply("📶 This chat name is - "+str(x)+" ✅")
+    message.reply("📶 The chat - "+str(x)+" ✅" + " added.")
   except:
    message.reply("♻️ Bot is not a admin in this channel 😣🕵️")
 
