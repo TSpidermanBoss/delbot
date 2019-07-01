@@ -11,10 +11,11 @@ def forawrd(client, message):
   for y in x:
    z = y.split()
    for f in z:
+    try:
      client.forward_messages(str("@"+f),message.chat.id,message.reply_to_message.message_id )
-    
+    except:
      message.reply("🔥 Sending Failed in " + f)
-     
+     continue
 
 
 @app.on_message(Filters.command("add"))
