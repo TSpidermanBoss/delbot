@@ -16,7 +16,7 @@ def forawrd(client, message):
     except:
      message.reply("🔥 Sending Failed in " + f)
      continue
-
+  message.reply("🔁 operation completed 🔁")
 
 @app.on_message(Filters.command("add"))
 def forawrd(client, message):
