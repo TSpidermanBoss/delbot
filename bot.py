@@ -49,7 +49,7 @@ def forward(client, message):
      files.close()
      message.reply("💾 Done, The chat_id  ```" + message.text.split(' ')[1] +"```🌐 has been removed to my database. ✅✅")
   
-    message.reply("☢️ ID not found 🚫")
+     message.reply("☢️ ID not found 🚫")
 @app.on_message(Filters.command('list'))
 def forward(client, message):
  x = client.get_chat_member(message.chat.id , message.from_user.id)
