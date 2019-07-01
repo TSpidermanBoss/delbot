@@ -23,11 +23,11 @@ def forawrd(client, message):
  x = client.get_chat_member(message.chat.id , message.from_user.id)
  if x.status == "administrator" or x.status == "creator":
   try:
+    client.send_message(message.text.split(" ")[1], "Powered by king")
     x = client.get_chat(str(message.text.split(' ')[1])).title
     file = open("sure.txt","a")
     file.write(" " + message.text.split(" ")[1])
     file.close()
-    client.send_message(message.text.split(" ")[1], "Powered by king")
     message.reply("📶 The chat - "+str(x)+" ✅" + " added.")
   except:
     message.reply("♻️ Bot is not a admin in this channel 😣🕵️")
