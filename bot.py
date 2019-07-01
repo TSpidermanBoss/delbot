@@ -26,6 +26,33 @@ def forawrd(client, message):
   except:
    message.reply("♻️ Bot is not a admin in this channel 😣🕵️")
 
-            
+@app.on_message(Filters.command('remove'))
+def forward(client, message):
+   file = open("sure.txt" , "r")
+   u = file.readlines()
+   file.close()
+   for v in u:
+     lines = v.split() 
+     del lines[lines.index(message.text.split(' ')[1])]
+     y = " ".join(str(x) for x in lines)
+     files = open("sure.txt" , "w") 
+     files.write(y)
+     files.close()
+     message.reply("💾 Done, The chat_id  ```" + message.text.split(' ')[1] +"```🌐 has been removed to my database. ✅✅")
+  
+@app.on_message(Filters.command('list'))
+def forward(client, message):
+  file = open("sure.txt" , "r")
+  u = file.readlines()
+  file.close()
+  for v in u :
+      message.reply("🏘️ List of Chat_ids in my database are ```" + str(v) + "```.")
+ 
+  
+@app.on_message(Filters.private)
+def forward(client, message):
+ if not message.from_user.id == 491634139:
+   message.reply("♻️ You need admins permission to use my functions. ✅✅")
+      
 
 app.run()
