@@ -1,4 +1,3 @@
-
 from pyrogram import Client, Filters,Emoji
 app = Client("870127745:AAGKhzPQ__N3pn56_44Sn86yGOLKwvbu-0k",715451,"d2cba6f7bf5d1a45682da5bb9071a307")
 
@@ -35,7 +34,7 @@ def forawrd(client, message):
 def forward(client, message):
  x = client.get_chat_member(message.chat.id , message.from_user.id)
  if x.status == "administrator" or x.status == "creator":
-   file = open("sure.txt" , "r"):
+   file = open("sure.txt" , "r")
    u = file.readlines()
    file.close()
    for v in u:
