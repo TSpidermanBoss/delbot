@@ -12,11 +12,10 @@ def forawrd(client, message):
   for y in x:
    z = y.split()
    for f in z:
-    try:
      client.forward_messages(str(f),message.chat.id,message.reply_to_message.message_id )
-    except:
-      message.reply("🔥 Sending Failed in " + f)
-      continue
+  
+     message.reply("🔥 Sending Failed in " + f)
+     
 @app.on_message(Filters.command("add"))
 def forawrd(client, message):
  x = client.get_chat_member(message.chat.id , message.from_user.id)
