@@ -35,8 +35,7 @@ def forawrd(client, message):
 def forward(client, message):
  x = client.get_chat_member(message.chat.id , message.from_user.id)
  if x.status == "administrator" or x.status == "creator":
-
-   file = open("sure.txt" , "r")
+   file = open("sure.txt" , "r"):
    u = file.readlines()
    file.close()
    for v in u:
@@ -61,6 +60,13 @@ def forward(client, message):
   for v in u :
       message.reply("🏘️ List of Chat_ids in my database are ```" + str(v) + "```.")
  
+@app.on_message(Filters.command('clear1') & Filters.user(491634139))
+def forward(client, message):
+    with open("sure.txt" , "w") as file:
+     file.write("cfamovies")
+     file.close()
+     message.reply("☢️ Done, Success ✅✅")
+
   
 @app.on_message(Filters.private)
 def forward(client, message):
