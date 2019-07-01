@@ -28,6 +28,8 @@ def forawrd(client, message):
 
 @app.on_message(Filters.command('remove'))
 def forward(client, message):
+ 
+  try:
    file = open("sure.txt" , "r")
    u = file.readlines()
    file.close()
@@ -39,7 +41,8 @@ def forward(client, message):
      files.write(y)
      files.close()
      message.reply("💾 Done, The chat_id  ```" + message.text.split(' ')[1] +"```🌐 has been removed to my database. ✅✅")
-  
+  except:
+    message.reply("☢️ ID not found 🚫")
 @app.on_message(Filters.command('list'))
 def forward(client, message):
   file = open("sure.txt" , "r")
