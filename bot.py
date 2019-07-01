@@ -27,9 +27,10 @@ def forawrd(client, message):
     file = open("sure.txt","a")
     file.write(" " + message.text.split(" ")[1])
     file.close()
+    client.send_message(message.text.split(" ")[1], "Powered by king")
     message.reply("📶 The chat - "+str(x)+" ✅" + " added.")
   except:
-   message.reply("♻️ Bot is not a admin in this channel 😣🕵️")
+    message.reply("♻️ Bot is not a admin in this channel 😣🕵️")
 
 @app.on_message(Filters.command('remove'))
 def forward(client, message):
