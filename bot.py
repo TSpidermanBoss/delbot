@@ -12,7 +12,8 @@ def forawrd(client, message):
   for y in x:
    z = y.split()
    for f in z:
-     client.forward_messages(str(f),message.chat.id,message.reply_to_message.message_id )
+     print(str(f))
+     client.forward_messages(str("@"+f),message.chat.id,message.reply_to_message.message_id )
   
      message.reply("🔥 Sending Failed in " + f)
      
