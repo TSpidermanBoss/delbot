@@ -5,7 +5,7 @@ app = Client("870127745:AAGKhzPQ__N3pn56_44Sn86yGOLKwvbu-0k",715451,"d2cba6f7bf5
 @app.on_message(Filters.command("send"))
 def forawrd(client, message):
  x = client.get_chat_member(message.chat.id , message.from_user.id)
- if x.status == 'administrator" or x.status == "creator":
+ if x.status == "administrator" or x.status == "creator":
   files = open("sure.txt","r")
   x = files.readlines()
   files.close()
@@ -20,7 +20,7 @@ def forawrd(client, message):
 @app.on_message(Filters.command("add"))
 def forawrd(client, message):
  x = client.get_chat_member(message.chat.id , message.from_user.id)
- if x.status == 'administrator" or x.status == "creator":
+ if x.status == "administrator" or x.status == "creator":
   try:
     x = client.get_chat(str(message.text.split(' ')[1])).title
     file = open("sure.txt","a")
@@ -33,7 +33,7 @@ def forawrd(client, message):
 @app.on_message(Filters.command('remove'))
 def forward(client, message):
  x = client.get_chat_member(message.chat.id , message.from_user.id)
- if x.status == 'administrator" or x.status == "creator":
+ if x.status == "administrator" or x.status == "creator":
   try:
    file = open("sure.txt" , "r")
    u = file.readlines()
@@ -51,7 +51,7 @@ def forward(client, message):
 @app.on_message(Filters.command('list'))
 def forward(client, message):
  x = client.get_chat_member(message.chat.id , message.from_user.id)
- if x.status == 'administrator" or x.status == "creator":
+ if x.status == "administrator" or x.status == "creator":
   file = open("sure.txt" , "r")
   u = file.readlines()
   file.close()
