@@ -21,12 +21,14 @@ def forawrd(client, message):
 @app.on_message(Filters.command("add"))
 def forawrd(client, message):
  o = False
- file = open("sure.txt","r")
- t = file.readlines()
- file.close()
+ fil = open("sure.txt","r")
+ t = fil.readlines()
+ fil.close()
  for h in t:
-   if h.casefold() in message.text.split(" ")[1].casefold():
-     o = True
+   q = h.split()
+   for d in b:
+    if d in message.text.split(" ")[1]:
+      o = True
  if not o :
   x = client.get_chat_member(message.chat.id , message.from_user.id)
   if x.status == "administrator" or x.status == "creator":
@@ -40,7 +42,7 @@ def forawrd(client, message):
    except:
      message.reply("♻️ Bot is not a admin in this channel 😡🤬🤬")
  if o:
-  message.reply("already added 😏😏")
+     message.reply("already added 😏😏")
 
 @app.on_message(Filters.command('remove'))
 def forward(client, message):
