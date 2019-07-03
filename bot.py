@@ -25,7 +25,9 @@ def forawrd(client, message):
  t = file.readlines()
  file.close()
  for h in t:
-  if h.casefold == message.text.split(" ")[2].casefold:
+  print(h.casefold)
+  print(message.text.split(" ")[1].casefold)
+  if h.casefold == message.text.split(" ")[1].casefold:
    o = True
  if not o :
   x = client.get_chat_member(message.chat.id , message.from_user.id)
