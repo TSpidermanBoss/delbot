@@ -59,7 +59,7 @@ def forward(client, message):
      files.close()
      message.reply("💾 Done, The chat_id  ```" + message.text.split(' ')[1] +"```🌐 has been removed to my database. ✅✅")
   except:
-     message.reply("☢️ ID not found 🚫")
+     message.reply("☢️ ID not found 🧐🙄😒")
 
 
 @app.on_message(Filters.command('list'))
@@ -83,7 +83,7 @@ def forward(client, message):
 @app.on_message(Filters.private)
 def forward(client, message):
  if not message.from_user.id == 491634139:
-   message.reply("♻️ You need admins permission to use my functions. ✅✅")
+   message.reply("♻️ The bot is Promotion bot created by a wonderful person 😘😊😋. Work only in groups😂😭. ✅✅")
       
 
 app.run()
