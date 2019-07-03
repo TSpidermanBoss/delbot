@@ -12,7 +12,7 @@ def forawrd(client, message):
    z = y.split()
    for f in z:
     try:
-     client.forward_messages(str("@"+f),message.chat.id,message.reply_to_message.message_id )
+     client.forward_messages(str(f),message.chat.id,message.reply_to_message.message_id )
     except:
      message.reply("🔥 Sending Failed in " + f)
      continue
@@ -27,7 +27,7 @@ def forawrd(client, message):
  for h in t:
    q = h.split()
    for d in q:
-    if d in message.text.split(" ")[1]:
+    if d.casefold() == message.text.split(" ")[1].casefold():
       o = True
  if not o :
   x = client.get_chat_member(message.chat.id , message.from_user.id)
