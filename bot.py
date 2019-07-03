@@ -25,10 +25,8 @@ def forawrd(client, message):
  t = file.readlines()
  file.close()
  for h in t:
-  print(h)
-  print(message.text.split(" ")[1])
-  if h.casefold == message.text.split(" ")[1].casefold:
-   o = True
+   if h == message.text.split(" ")[1]:
+     o = True
  if not o :
   x = client.get_chat_member(message.chat.id , message.from_user.id)
   if x.status == "administrator" or x.status == "creator":
