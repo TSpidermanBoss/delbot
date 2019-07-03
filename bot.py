@@ -20,13 +20,13 @@ def forawrd(client, message):
 
 @app.on_message(Filters.command("add"))
 def forawrd(client, message):
- o = false
+ o = False
  file = open("sure.txt","r")
  t = file.readlines()
  file.close()
  for h in t:
   if h.casefold == message.text.split(" ")[2].casefold:
-   o = true
+   o = True
  if not o :
   x = client.get_chat_member(message.chat.id , message.from_user.id)
   if x.status == "administrator" or x.status == "creator":
