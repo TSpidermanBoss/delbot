@@ -26,7 +26,7 @@ def forawrd(client, message):
  fil.close()
  for h in t:
    q = h.split()
-   for d in b:
+   for d in q:
     if d in message.text.split(" ")[1]:
       o = True
  if not o :
