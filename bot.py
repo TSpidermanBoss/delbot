@@ -1,5 +1,5 @@
 from pyrogram import Client, Filters,Emoji
-app = Client("session",bot_token="663574960:AAGWfrBnjGYGSczuGHGLG60RVLMp6ebWteM",api_id=605563,api_hash="7f2c2d12880400b88764b9b304e14e0b")
+app = Client("session",bot_token="663574960:AAGWg1VGruCPuckHzjbpDLRIbPWkX6YcDlc",api_id=605563,api_hash="7f2c2d12880400b88764b9b304e14e0b")
 
 @app.on_message(Filters.command("send"))
 def forawrd(client, message):
