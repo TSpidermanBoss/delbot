@@ -20,17 +20,27 @@ def forawrd(client, message):
 
 @app.on_message(Filters.command("add"))
 def forawrd(client, message):
- x = client.get_chat_member(message.chat.id , message.from_user.id)
- if x.status == "administrator" or x.status == "creator":
-  try:
-    client.send_message(message.text.split(" ")[1], "Powered by king")
-    x = client.get_chat(str(message.text.split(' ')[1])).title
-    file = open("sure.txt","a")
-    file.write(" " + message.text.split(" ")[1])
-    file.close()
-    message.reply("📶 The chat - "+str(x)+" ✅" + " added.")
-  except:
-    message.reply("♻️ Bot is not a admin in this channel 😣🕵️")
+ o = false
+ file = open("sure.txt","r")
+ t = file.readlines()
+ file.close()
+ for h in t:
+  if h.casefold == message.text.split(" ")[2].casefold:
+   o = true
+ if not o :
+  x = client.get_chat_member(message.chat.id , message.from_user.id)
+  if x.status == "administrator" or x.status == "creator":
+   try:
+     client.send_message(message.text.split(" ")[1], "Powered by king")
+     y = client.get_chat(str(message.text.split(' ')[1])).title
+     file = open("sure.txt","a")
+     file.write(" " + message.text.split(" ")[1])
+     file.close()
+     message.reply("📶 The chat - "+str(y)+" ✅" + " added. 😋😝😜😍")
+   except:
+     message.reply("♻️ Bot is not a admin in this channel 😡🤬🤬")
+ if o:
+  message.reply("already added 😏😏")
 
 @app.on_message(Filters.command('remove'))
 def forward(client, message):
