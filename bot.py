@@ -85,7 +85,26 @@ def forward(client, message):
 @app.on_message(Filters.private)
 def forward(client, message):
  if not message.from_user.id == 491634139:
-   message.reply("♻️ The bot is Promotion bot created by a wonderful person 😘😊😋. Work only in groups😂😭. ✅✅")
+   message.reply("""♻️ The bot is Promotion bot created by a wonderful person . 
+Work only in groups. ✅✅
+
+How to use:
+
+👉 add a channel
+1. ```/add @username```
+
+👉 remove a channel
+2. ```/remove @username```
+
+👉 list of channels
+3. ```/list```
+
+👉 send a list
+4. reply a list of Channel to ```/send``` for send it to all Channels.
+
+only Admin exist that's command in supergroups. ✍️
+
+Powered by king Promotion 👊.     """)
       
 
 app.run()
