@@ -5,7 +5,7 @@ app = Client("session",bot_token="903164012:AAH6f9qw6TGaF7DJkiaCeqjp7oaM92p93fc"
 
 @app.on_message(Filters.text)
 def main(client, message):
-b = client.get_chat_member(message.chat.id , message.from_user.id).status
+ b = client.get_chat_member(message.chat.id , message.from_user.id).status
  if not b == 'administrator' or b == "creator":  
   if "@" in message.text:
    client.delete_messages(message.chat.id, message.message_id)
