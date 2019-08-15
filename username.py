@@ -14,13 +14,8 @@ Add me to your group i will delete username from non admins automatically.""")
 def main(client, message):
  b = client.get_chat_member(message.chat.id , message.from_user.id).status
  if not b == 'administrator' or b == "creator":  
-   txt = message.text
-   for t in txt:
-    x = re.search("^@", t)
-    if x:
-     print(x.text)
-     #client.delete_messages(message.chat.id, message.message_id)
-
+   for x in message.entities:
+    print(x.type, message.text[x.offset:x.offset+x.length])
 
 
 app.run()
