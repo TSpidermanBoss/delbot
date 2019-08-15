@@ -15,9 +15,11 @@ def main(client, message):
  b = client.get_chat_member(message.chat.id , message.from_user.id).status
  if not b == 'administrator' or b == "creator":  
    txt = message.text
-   x = re.search("^@", txt)
-   print(x)
-   #client.delete_messages(message.chat.id, message.message_id)
+   for t in txt:
+    x = re.search("^@", t)
+    if x:
+     print(x)
+     #client.delete_messages(message.chat.id, message.message_id)
 
 
 
