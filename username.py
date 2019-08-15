@@ -18,7 +18,7 @@ def main(client, message):
    for t in txt:
     x = re.search("^@", t)
     if x:
-     print(x)
+     print(x.text)
      #client.delete_messages(message.chat.id, message.message_id)
 
 
