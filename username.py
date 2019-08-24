@@ -1,7 +1,7 @@
 from pyrogram import Client, Filters,Emoji
 import re
 
-app = Client("session",bot_token="622131522:AAFUneglCPEgaZKa8lcaYCnIKitXjct8YGU",api_id=715451,api_hash="d2cba6f7bf5d1a45682da5bb9071a307")
+app = Client("session",bot_token="622131522:AAHordhdDvQ08qLmEsVl3U4Nkb2S-aEAJr8",api_id=715451,api_hash="d2cba6f7bf5d1a45682da5bb9071a307")
 
 @app.on_message(Filters. private & Filters.command("start"))
 def ran( client, message) :
