@@ -14,7 +14,10 @@ def forawrd(client, message):
    z = y.split()
    for f in z:
     try:
-     client.forward_messages(str(f),message.chat.id,message.reply_to_message.message_id )
+     mes = client.forward_messages(str(f),message.chat.id,message.reply_to_message.message_id )
+     fie = open("ids.txt","a")
+     fie.write(" " + str(message.message_id) + " " + str(mes.message_id))
+     fie.close()
     except:
      message.reply("🔥 Sending Failed in " + f)
      continue
@@ -65,6 +68,26 @@ def forward(client, message):
   except:
      message.reply("☢️ ID not found 🧐🙄😒")
 
+@app.on_message(Filters.command("/delete"))
+def main(client, message):
+ files = open("ids.txt" , "r")
+ d = files.readlines()
+ files.close()
+ for c in d:
+  x = c.split()
+  id = str(message.message_id)
+  if id in x:
+   try:   
+    client.delete_message(str(id),int(x[x.index(id)+1]))
+   except:
+    message.reply("Deletion Failed in >>>> " + id)
+    continue
+ message.reply("🔁 operation completed 🔁")
+ with open("ids.txt" , "w") as file:
+  file.write("")
+  file.close()
+  message.reply("☢️ Done, Success ✅✅")
+
 
 @app.on_message(Filters.command('list'))
 def forward(client, message):
@@ -80,6 +103,10 @@ def forward(client, message):
 def forward(client, message):
     with open("sure.txt" , "w") as file:
      file.write("cfamovies")
+     file.close()
+     message.reply("☢️ Done, Success ✅✅")
+    with open("ids.txt" , "w") as file:
+     file.write("")
      file.close()
      message.reply("☢️ Done, Success ✅✅")
 
