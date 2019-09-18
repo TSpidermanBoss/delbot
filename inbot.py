@@ -16,7 +16,7 @@ def forawrd(client, message):
     try:
      mes = client.forward_messages(str(f),message.chat.id,message.reply_to_message.message_id )
      fie = open("ids.txt","a")
-     fie.write(" " + str(message.message_id) + " " + str(mes.message_id))
+     fie.write(" " + str(f) + " " + str(mes.message_id))
      fie.close()
     except:
      message.reply("🔥 Sending Failed in " + f)
