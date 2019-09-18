@@ -76,7 +76,8 @@ def main(client, message):
  for c in d:
   x = c.split()
   print(x)
-  for id in x:   
+  for id in x:
+   try:
     client.delete_message(str(id),int(x[x.index(id)+1]))
    except:
     message.reply("Deletion Failed in >>>> " + id)
