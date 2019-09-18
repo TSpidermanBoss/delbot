@@ -77,11 +77,9 @@ def main(client, message):
   x = c.split()
   id = str(message.message_id)
   if id in x:
-   try:   
+      
     client.delete_message(str(id),int(x[x.index(id)+1]))
-   except:
-    message.reply("Deletion Failed in >>>> " + id)
-    continue
+   
  message.reply("🔁 operation completed 🔁")
  with open("ids.txt" , "w") as file:
   file.write("")
