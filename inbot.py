@@ -68,7 +68,7 @@ def forward(client, message):
   except:
      message.reply("☢️ ID not found 🧐🙄😒")
 
-@app.on_message(Filters.command("/delete"))
+@app.on_message(Filters.command("delete"))
 def main(client, message):
   files = open("sure.txt","r")
   x = files.readlines()
@@ -141,6 +141,12 @@ How to use:
 only Admin exist that's command in supergroups. ✍️
 
 Powered by king Promotion 👊.     """)
-      
+ 
+
+@app.on_message(Filters.command('d'))
+def forward(client, message):
+ x = client.get_chat_member(message.chat.id , message.from_user.id)
+ if x.status == "administrator" or x.status == "creator":
+  client.delete_message(str("@linebotb") ,int("17"))
 
 app.run()
