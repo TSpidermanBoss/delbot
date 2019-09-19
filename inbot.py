@@ -15,7 +15,7 @@ def forawrd(client, message):
    for f in z:
     try:
      mes = client.forward_messages(str(f),message.chat.id,message.reply_to_message.message_id )
-     fie = open("ids.txt","a")
+     fie = open(str(f)+".txt","w")
      fie.write(" " + str(f) + " " + str(mes.message_id))
      fie.close()
     except:
@@ -70,23 +70,29 @@ def forward(client, message):
 
 @app.on_message(Filters.command("/delete"))
 def main(client, message):
- files = open("ids.txt" , "r")
- d = files.readlines()
- files.close()
- for c in d:
-  x = c.split()
-  print(x)
-  for id in x:
-   try:
-    client.delete_message(str(id),int(x[x.index(id)+1]))
-   except:
-    message.reply("Deletion Failed in >>>> " + id)
-    continue
- message.reply("🔁 operation completed 🔁")
- with open("ids.txt" , "w") as file:
-  file.write("")
-  file.close()
-  message.reply("☢️ Done, Success ✅✅")
+  files = open("sure.txt","r")
+  x = files.readlines()
+  files.close()
+  for y in x:
+   z = y.split()
+   for f in z:
+    files = open(str(f)+".txt" , "r")
+    d = files.readlines()
+    files.close()
+    for c in d:
+     x = c.split()
+     print(x)
+     for id in x:
+      try:
+       client.delete_message(str(id),int(x[x.index(id)+1]))
+      except:
+       message.reply("Deletion Failed in >>>> " + id)
+       continue
+      message.reply("🔁 operation completed 🔁")
+    with open(str(f)+".txt" , "w") as file:
+     file.write("")
+     file.close()
+     message.reply("☢️ Done, Success ✅✅" + str(f))
 
 
 @app.on_message(Filters.command('list'))
