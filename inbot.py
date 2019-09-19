@@ -35,16 +35,16 @@ def forawrd(client, message):
   x = client.get_chat_member(message.chat.id , message.from_user.id)
   if x.status == "administrator" or x.status == "creator":
    try:
-     client.send_message(message.text.split(" ")[1], "Powered by king")
+     client.send_message(message.text.split(" ")[1], "Powered by Indian Promotion")
      y = client.get_chat(str(message.text.split(' ')[1])).title
      file = open("sure.txt","a")
      file.write(" " + message.text.split(" ")[1])
      file.close()
-     message.reply("📶 The chat - "+str(y)+" ✅" + " added. 😋😝😜😍")
+     message.reply("📶 The chat - "+str(y)+" ✅" + " added .")
    except:
-     message.reply("♻️ Bot is not a admin in this channel 😡🤬🤬")
+     message.reply("♻️ I is not a admin in str(y)")
  if o:
-     message.reply("already added 😏😏")
+     message.reply("🔰 Chat already in List 💼")
 
 @app.on_message(Filters.command('remove'))
 def forward(client, message):
@@ -63,7 +63,7 @@ def forward(client, message):
      files.close()
      message.reply("💾 Done, The chat_id  ```" + message.text.split(' ')[1] +"```🌐 has been removed to my database. ✅✅")
   except:
-     message.reply("☢️ ID not found 🧐🙄😒")
+     message.reply("☢️ ID not found!")
 
 @app.on_message(Filters.command("delete"))
 def main(client, message):
@@ -130,5 +130,5 @@ How to use:
 
 only Admin exist that's command in supergroups. ✍️
 
-Powered by king Promotion 👊.     """)
+Powered by Indian Promotion 👊.     """)
 app.run()
