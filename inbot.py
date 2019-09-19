@@ -85,8 +85,8 @@ def main(client, message):
        message.reply("Deletion Failed in >>>> " + str(f))
        continue
      with open(str(f)+".txt" , "w") as file:
-     file.write("")
-     file.close()
+      file.write("")
+      file.close()
   message.reply("🔁 operation completed 🔁")
 
 @app.on_message(Filters.command('list'))
