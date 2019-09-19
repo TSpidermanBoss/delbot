@@ -102,7 +102,7 @@ def forward(client, message):
 @app.on_message(Filters.command('clear1') & Filters.user(491634139))
 def forward(client, message):
     with open("sure.txt" , "w") as file:
-     file.write("cfamovies")
+     file.write("")
      file.close()
      message.reply("☢️ Done, Success ✅✅") 
 @app.on_message(Filters.private)
