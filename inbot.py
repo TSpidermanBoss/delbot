@@ -1,8 +1,5 @@
 from pyrogram import Client, Filters,Emoji
 app = Client("session",bot_token="920744259:AAE6oO14ak3KmIvjJPR6JSGVv3xzOMl4bOw",api_id=715451,api_hash="d2cba6f7bf5d1a45682da5bb9071a307")
-
-#("session",bot_token="903164012:AAH6f9qw6TGaF7DJkiaCeqjp7oaM92p93fc",api_id=605563,api_hash="7f2c2d12880400b88764b9b304e14e0b")
-
 @app.on_message(Filters.command("send"))
 def forawrd(client, message):
  x = client.get_chat_member(message.chat.id , message.from_user.id)
@@ -81,17 +78,16 @@ def main(client, message):
     files.close()
     for c in d:
      x = c.split()
-     print(x)
      for id in x:
       try:
-       print(str(f).replace ("@","") + "  " + id)
        client.delete_messages(str(f).replace ("@",""),int(id))
       except:
        message.reply("Deletion Failed in >>>> " + str(f))
        continue
-    with open(str(f)+".txt" , "w") as file:
+     with open(str(f)+".txt" , "w") as file:
      file.write("")
      file.close()
+  message.reply("🔁 operation completed 🔁")
 
 @app.on_message(Filters.command('list'))
 def forward(client, message):
@@ -108,13 +104,7 @@ def forward(client, message):
     with open("sure.txt" , "w") as file:
      file.write("cfamovies")
      file.close()
-     message.reply("☢️ Done, Success ✅✅")
-    with open("ids.txt" , "w") as file:
-     file.write("")
-     file.close()
-     message.reply("☢️ Done, Success ✅✅")
-
-  
+     message.reply("☢️ Done, Success ✅✅") 
 @app.on_message(Filters.private)
 def forward(client, message):
  if not message.from_user.id == 491634139:
@@ -141,12 +131,4 @@ How to use:
 only Admin exist that's command in supergroups. ✍️
 
 Powered by king Promotion 👊.     """)
- 
-
-@app.on_message(Filters.command('d'))
-def forward(client, message):
- x = client.get_chat_member(message.chat.id , message.from_user.id)
- if x.status == "administrator" or x.status == "creator":
-  client.delete_messages(str("@linebotb") ,int("17"))
-
 app.run()
