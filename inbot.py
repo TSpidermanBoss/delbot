@@ -85,7 +85,7 @@ def main(client, message):
      for id in x:
       try:
        print(str(f).replace ("@","") + "  " + id)
-       client.delete_message(str(f).replace ("@",""),int(id))
+       client.delete_messages(str(f).replace ("@",""),int(id))
       except:
        message.reply("Deletion Failed in >>>> " + str(f))
        continue
@@ -147,6 +147,6 @@ Powered by king Promotion 👊.     """)
 def forward(client, message):
  x = client.get_chat_member(message.chat.id , message.from_user.id)
  if x.status == "administrator" or x.status == "creator":
-  client.delete_message(str("@linebotb") ,int("17"))
+  client.delete_messages(str("@linebotb") ,int("17"))
 
 app.run()
