@@ -84,16 +84,14 @@ def main(client, message):
      print(x)
      for id in x:
       try:
-       client.delete_message(str(f),int(id))
+       print(str(f).replace ("@","") + "  " + id)
+       client.delete_message(str(f).replace ("@",""),int(id))
       except:
-       message.reply("Deletion Failed in >>>> " + id)
+       message.reply("Deletion Failed in >>>> " + str(f))
        continue
-      message.reply("🔁 operation completed 🔁")
     with open(str(f)+".txt" , "w") as file:
      file.write("")
      file.close()
-     message.reply("☢️ Done, Success ✅✅" + str(f))
-
 
 @app.on_message(Filters.command('list'))
 def forward(client, message):
