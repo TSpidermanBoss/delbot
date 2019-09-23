@@ -42,7 +42,7 @@ def forawrd(client, message):
      file.close()
      message.reply("📶 The chat - "+str(y)+" ✅" + " added .")
    except:
-     message.reply("♻️ I is not a admin in " + str(y))
+     message.reply("♻️ I is not a admin in this Channel.")
  if o:
      message.reply("🔰 Chat already in List 💼")
 
