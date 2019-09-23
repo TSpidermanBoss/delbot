@@ -73,9 +73,7 @@ def main(client, message):
   x = files.readlines()
   files.close()
   for y in x:
-   z = y.split()
-   for f in z:
-    files = open(str(f)+".txt" , "r")
+    files = open(str(y)+".txt" , "r")
     d = files.readlines()
     files.close()
     for c in d:
