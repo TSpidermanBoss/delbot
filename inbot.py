@@ -78,7 +78,7 @@ def main(client, message):
     files.close()
     for c in d:
       try:
-       client.delete_messages(str(f).replace ("@",""),int(id))
+       client.delete_messages(str(f).replace ("@",""),int(c))
        with open(str(f)+".txt" , "w") as file:
         file.write("")
         file.close()
