@@ -85,7 +85,6 @@ def main(client, message):
         file.write("")
         file.close()
       except:
-       message.reply("Error in " + str(f))
        continue
   message.reply("🔁 operation completed 🔁")
 
