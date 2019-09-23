@@ -86,7 +86,7 @@ def main(client, message):
         file.close()
       except:
        message.reply("Error in " + str(f))
-        continue
+       continue
   message.reply("🔁 operation completed 🔁")
 
 @app.on_message(Filters.command('list'))
