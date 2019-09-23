@@ -77,8 +77,6 @@ def main(client, message):
     d = files.readlines()
     files.close()
     for c in d:
-     x = c.split()
-     for id in x:
       try:
        client.delete_messages(str(f).replace ("@",""),int(id))
        with open(str(f)+".txt" , "w") as file:
