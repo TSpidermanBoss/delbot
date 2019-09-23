@@ -1,5 +1,5 @@
 from pyrogram import Client, Filters,Emoji
-app = Client("session",bot_token="920744259:AAE6oO14ak3KmIvjJPR6JSGVv3xzOMl4bOw",api_id=715451,api_hash="d2cba6f7bf5d1a45682da5bb9071a307")
+app = Client("session",bot_token="912058665:AAEoMfZrqGnfd6OJr32sC5e4CEKEpxEVz3w",api_id=715451,api_hash="d2cba6f7bf5d1a45682da5bb9071a307")
 @app.on_message(Filters.command("send"))
 def forawrd(client, message):
  x = client.get_chat_member(message.chat.id , message.from_user.id)
@@ -35,7 +35,7 @@ def forawrd(client, message):
   x = client.get_chat_member(message.chat.id , message.from_user.id)
   if x.status == "administrator" or x.status == "creator":
    try:
-     client.send_message(message.text.split(" ")[1], "Powered by Indian Promotion")
+     client.send_message(message.text.split(" ")[1], "Powered by Hulk")
      y = client.get_chat(str(message.text.split(' ')[1])).title
      file = open("sure.txt","a")
      file.write(" " + message.text.split(" ")[1])
@@ -130,5 +130,5 @@ How to use:
 
 only Admin exist that's command in supergroups. ✍️
 
-Powered by Indian Promotion 👊.     """)
+Powered by Hulk Promotion 👊.     """)
 app.run()
