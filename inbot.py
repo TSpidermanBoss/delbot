@@ -73,7 +73,9 @@ def main(client, message):
   x = files.readlines()
   files.close()
   for y in x:
-    files = open(str(y)+".txt" , "r")
+   z = y.split()
+   for f in z:
+    files = open(str(f)+".txt" , "r")
     d = files.readlines()
     files.close()
     for c in d:
@@ -83,8 +85,7 @@ def main(client, message):
         file.write("")
         file.close()
       except:
-       message.reply("Deletion Failed in >>>> " + str(f))
-       continue
+        continue
   message.reply("🔁 operation completed 🔁")
 
 @app.on_message(Filters.command('list'))
