@@ -12,7 +12,7 @@ def forawrd(client, message):
    for f in z:
     try:
      mes = client.forward_messages(str(f),message.chat.id,message.reply_to_message.message_id )
-     fie = open(str(f).replace("@","")+".txt","w")
+     fie = open(str(f)+".txt","w")
      fie.write(str(mes.message_id))
      fie.close()
     except:
@@ -80,11 +80,12 @@ def main(client, message):
     files.close()
     for c in d:
       try:
-       client.delete_messages(str(f).replace ("@",""),int(c))
-       with open(str(f).replace("@","")+".txt" , "w") as file:
+       client.delete_messages(str(f),int(c))
+       with open(str(f)+".txt" , "w") as file:
         file.write("")
         file.close()
       except:
+       message.reply("Error in " + str(f))
         continue
   message.reply("🔁 operation completed 🔁")
 
