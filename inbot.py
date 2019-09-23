@@ -67,6 +67,8 @@ def forward(client, message):
 
 @app.on_message(Filters.command("delete"))
 def main(client, message):
+ x = client.get_chat_member(message.chat.id , message.from_user.id)
+ if x.status == "administrator" or x.status == "creator":
   files = open("sure.txt","r")
   x = files.readlines()
   files.close()
