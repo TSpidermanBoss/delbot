@@ -12,4 +12,5 @@ def forawrd(client, message):
     client.delete_messages(message.chat.id,m)
    except:
     continue
+  message.reply("Purge Completed!")
 app.run()
