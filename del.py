@@ -5,12 +5,12 @@ app = Client (session_name=input("Enter session name : ") ,api_id=814511,api_has
 
 @app.on_message(Filters.command("e"))
 def main(client, message):
-x = message.command[1]
-y = message.command[2]
-print(x)
-print(y)
-print(int(x))
-for m in range(int(x),int(y)):
+ x = message.command[1]
+ y = message.command[2]
+ print(x)
+ print(y)
+ print(int(x))
+ for m in range(int(x),int(y)):
   try:
    client.delete_messages(message.chat.id,m)
   except:
