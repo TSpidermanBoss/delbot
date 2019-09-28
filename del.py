@@ -1,5 +1,5 @@
 from pyrogram import Client, Filters,Emoji
-app = Client("session",728044,"a41ddadc9696482aff94a4b37221574a")307")
+app = Client("session",728044,"a41ddadc9696482aff94a4b37221574a")
 
 @app.on_message(Filters.command("e"))
 def forawrd(client, message):
