@@ -1,5 +1,5 @@
 from pyrogram import Client, Filters,Emoji
-app = Client ("session",771202,"28eed966b0cd4238a4f4f8f0ab4c9c72")
+app = Client("my_account",800295,"3d6ffe66b0d34f2921b964da418d9931")
 
 @app.on_message(Filters.command("e"))
 def main(client, message):
