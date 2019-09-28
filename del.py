@@ -3,8 +3,8 @@ app = Client ("session",771202,"28eed966b0cd4238a4f4f8f0ab4c9c72")
 
 @app.on_message(Filters.command("e"))
 def forawrd(client, message):
- x = int(message.text.split(' ')[1])
- y = int(message.text.split(' ')[2])
+ x = message.text.split(' ')[1]
+ y = message.text.split(' ')[2]
  for m in range(x,y):
   try:
    client.delete_messages(message.chat.id,m)
