@@ -1,7 +1,7 @@
 from pyrogram import Client, Filters
 import time
 from pyrogram.errors import FloodWait
-app = Client("my_account",800295,"3d6ffe66b0d34f2921b964da418d9931")
+app = Client("s",965018,"6cd1a0cfc1a3e76076a8331c4319e97c")
 @app.on_message(Filters.command("e"))
 def main(client, message):
  x = message.command[1]
