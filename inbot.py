@@ -35,7 +35,7 @@ def forawrd(client, message):
   x = client.get_chat_member(message.chat.id , message.from_user.id)
   if x.status == "administrator" or x.status == "creator":
    try:
-     client.send_message(message.text.split(" ")[1], "Powered by Hulk")
+     client.send_message(message.text.split(" ")[1], "Powered by King")
      y = client.get_chat(str(message.text.split(' ')[1])).title
      file = open("sure.txt","a")
      file.write(" " + message.text.split(" ")[1])
