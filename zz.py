@@ -1,4 +1,3 @@
-  
 from pyrogram import Client, Filters, Emoji
 import random
 import time
@@ -12,91 +11,108 @@ def ran(client, message):
  if b.status == 'administrator' or b.status =="creator":
     if len(message.text.split(' ')) > 1:
       x = random.choice(["3","2","3","4","2","1","2","4","1","6","3","4","2","3","6","4","3"])
-      y = random.choice(["Run out","catch out","🚾 Wicket 🚾"])
+      y = random.choice(["Run out","catch out","ðŸš¾ Wicket ðŸš¾"])
       z = random.choice(["dot ball","wide ball","no ball"])
-      a = message.reply(random.choice([ "**Ball 0.{}🎾**: Score **" + x + "** Runs","**Ball 0.{}🎾**: " + z, "**Ball 0.{}🎾**: Score **" + x + "** Runs" ,"**Ball 0.{}🎾**: " + z,"**Ball 0.{}🎾**:" + y ,"**Ball 0.{}🎾**: Score **" + x + "** Runs" , ]).format("1"))
+      a = message.reply(random.choice([ "**Ball 0.{}ðŸŽ¾**: Score **" + x + "** Runs","**Ball 0.{}ðŸŽ¾**: " + z, "**Ball 0.{}ðŸŽ¾**: Score **" + x + "** Runs" ,"**Ball 0.{}ðŸŽ¾**: " + z,"**Ball 0.{}ðŸŽ¾**:" + y ,"**Ball 0.{}ðŸŽ¾**: Score **" + x + "** Runs" , ]).format("1"))
+      time.sleep(2)
       x = random.choice(["3","2","3","4","2","1","2","4","1","6","3","4","2","3","6","4","3"])
-      y = random.choice(["Run out","catch out","🚾 Wicket 🚾"])
+      y = random.choice(["Run out","catch out","ðŸš¾ Wicket ðŸš¾"])
       z = random.choice(["dot ball","wide ball","no ball"])
-      if a.text == "Ball 0.1🎾: no ball" or a.text == "Ball 0.1🎾: wide ball":
-        a = message.reply(random.choice([ "**Ball 0.{}🎾**: Score **" + x + "** Runs","**Ball 0.{}🎾**: " + z, "**Ball 0.{}🎾**: Score **" + x + "** Runs" ,"**Ball 0.{}🎾**: " + z,"**Ball 0.{}🎾**:" + y ,"**Ball 0.{}🎾**: Score **" + x + "** Runs" , ]).format("1"))
+      if a.text == "Ball 0.1ðŸŽ¾: no ball" or a.text == "Ball 0.1ðŸŽ¾: wide ball":
+        a = message.reply(random.choice([ "**Ball 0.{}ðŸŽ¾**: Score **" + x + "** Runs","**Ball 0.{}ðŸŽ¾**: " + z, "**Ball 0.{}ðŸŽ¾**: Score **" + x + "** Runs" ,"**Ball 0.{}ðŸŽ¾**: " + z,"**Ball 0.{}ðŸŽ¾**:" + y ,"**Ball 0.{}ðŸŽ¾**: Score **" + x + "** Runs" , ]).format("1"))
         x = random.choice(["3","2","3","4","2","1","2","4","1","6","3","4","2","3","6","4","3"])
-        y = random.choice(["Run out","catch out","🚾 Wicket 🚾"])
+        y = random.choice(["Run out","catch out","ðŸš¾ Wicket ðŸš¾"])
         z = random.choice(["dot ball"])
-        if a.text == "Ball 0.1🎾: no ball" or a.text == "Ball 0.1🎾: wide ball":
-          a = message.reply(random.choice([ "**Ball 0.{}🎾**: Score **" + x + "** Runs","**Ball 0.{}🎾**: " + z, "**Ball 0.{}🎾**: Score **" + x + "** Runs" ,"**Ball 0.{}🎾**: " + z,"**Ball 0.{}🎾**:" + y ,"**Ball 0.{}🎾**: Score **" + x + "** Runs" , ]).format("1"))
+        if a.text == "Ball 0.1ðŸŽ¾: no ball" or a.text == "Ball 0.1ðŸŽ¾: wide ball":
+          a = message.reply(random.choice([ "**Ball 0.{}ðŸŽ¾**: Score **" + x + "** Runs","**Ball 0.{}ðŸŽ¾**: " + z, "**Ball 0.{}ðŸŽ¾**: Score **" + x + "** Runs" ,"**Ball 0.{}ðŸŽ¾**: " + z,"**Ball 0.{}ðŸŽ¾**:" + y ,"**Ball 0.{}ðŸŽ¾**: Score **" + x + "** Runs" , ]).format("1"))
+          time.sleep(2)
           x = random.choice(["3","2","3","4","2","1","2","4","1","6","3","4","2","3","6","4","3"])
-          y = random.choice(["Run out","catch out","🚾 Wicket 🚾"])
+          y = random.choice(["Run out","catch out","ðŸš¾ Wicket ðŸš¾"])
           z = random.choice(["dot ball","wide ball","no ball"])
-      a = message.reply(random.choice([ "**Ball 0.{}🎾**: Score **" + x + "** Runs","**Ball 0.{}🎾**: " + z, "**Ball 0.{}🎾**: Score **" + x + "** Runs" ,"**Ball 0.{}🎾**: " + z,"**Ball 0.{}🎾**:" + y ,"**Ball 0.{}🎾**: Score **" + x + "** Runs" , ]).format("2"))
+      a = message.reply(random.choice([ "**Ball 0.{}ðŸŽ¾**: Score **" + x + "** Runs","**Ball 0.{}ðŸŽ¾**: " + z, "**Ball 0.{}ðŸŽ¾**: Score **" + x + "** Runs" ,"**Ball 0.{}ðŸŽ¾**: " + z,"**Ball 0.{}ðŸŽ¾**:" + y ,"**Ball 0.{}ðŸŽ¾**: Score **" + x + "** Runs" , ]).format("2"))
+      time.sleep(2)
       x = random.choice(["3","2","3","4","2","1","2","4","1","6","3","4","2","3","6","4","3"])
-      y = random.choice(["Run out","catch out","🚾 Wicket 🚾"])
+      y = random.choice(["Run out","catch out","ðŸš¾ Wicket ðŸš¾"])
       z = random.choice(["dot ball","wide ball","no ball"])
-      if a.text == "Ball 0.1🎾: no ball" or a.text == "Ball 0.1🎾: wide ball":
-        a = message.reply(random.choice([ "**Ball 0.{}🎾**: Score **" + x + "** Runs","**Ball 0.{}🎾**: " + z, "**Ball 0.{}🎾**: Score **" + x + "** Runs" ,"**Ball 0.{}🎾**: " + z,"**Ball 0.{}🎾**:" + y ,"**Ball 0.{}🎾**: Score **" + x + "** Runs" , ]).format("2"))
+      if a.text == "Ball 0.1ðŸŽ¾: no ball" or a.text == "Ball 0.1ðŸŽ¾: wide ball":
+        a = message.reply(random.choice([ "**Ball 0.{}ðŸŽ¾**: Score **" + x + "** Runs","**Ball 0.{}ðŸŽ¾**: " + z, "**Ball 0.{}ðŸŽ¾**: Score **" + x + "** Runs" ,"**Ball 0.{}ðŸŽ¾**: " + z,"**Ball 0.{}ðŸŽ¾**:" + y ,"**Ball 0.{}ðŸŽ¾**: Score **" + x + "** Runs" , ]).format("2"))
+        time.sleep(2)
         x = random.choice(["3","2","3","4","2","1","2","4","1","6","3","4","2","3","6","4","3"])
-        y = random.choice(["Run out","catch out","🚾 Wicket 🚾"])
+        y = random.choice(["Run out","catch out","ðŸš¾ Wicket ðŸš¾"])
         z = random.choice(["dot ball"])
-        if a.text == "Ball 0.1🎾: no ball" or a.text == "Ball 0.1🎾: wide ball":
-          a = message.reply(random.choice([ "**Ball 0.{}🎾**: Score **" + x + "** Runs","**Ball 0.{}🎾**: " + z, "**Ball 0.{}🎾**: Score **" + x + "** Runs" ,"**Ball 0.{}🎾**: " + z,"**Ball 0.{}🎾**:" + y ,"**Ball 0.{}🎾**: Score **" + x + "** Runs" , ]).format("2"))
+        if a.text == "Ball 0.1ðŸŽ¾: no ball" or a.text == "Ball 0.1ðŸŽ¾: wide ball":
+          a = message.reply(random.choice([ "**Ball 0.{}ðŸŽ¾**: Score **" + x + "** Runs","**Ball 0.{}ðŸŽ¾**: " + z, "**Ball 0.{}ðŸŽ¾**: Score **" + x + "** Runs" ,"**Ball 0.{}ðŸŽ¾**: " + z,"**Ball 0.{}ðŸŽ¾**:" + y ,"**Ball 0.{}ðŸŽ¾**: Score **" + x + "** Runs" , ]).format("2"))
+          time.sleep(2)
           x = random.choice(["3","2","3","4","2","1","2","4","1","6","3","4","2","3","6","4","3"])
-          y = random.choice(["Run out","catch out","🚾 Wicket 🚾"])
+          y = random.choice(["Run out","catch out","ðŸš¾ Wicket ðŸš¾"])
           z = random.choice(["dot ball","wide ball","no ball"])
-      a = message.reply(random.choice([ "**Ball 0.{}🎾**: Score **" + x + "** Runs","**Ball 0.{}🎾**: " + z, "**Ball 0.{}🎾**: Score **" + x + "** Runs" ,"**Ball 0.{}🎾**: " + z,"**Ball 0.{}🎾**:" + y ,"**Ball 0.{}🎾**: Score **" + x + "** Runs" , ]).format("3"))
+      a = message.reply(random.choice([ "**Ball 0.{}ðŸŽ¾**: Score **" + x + "** Runs","**Ball 0.{}ðŸŽ¾**: " + z, "**Ball 0.{}ðŸŽ¾**: Score **" + x + "** Runs" ,"**Ball 0.{}ðŸŽ¾**: " + z,"**Ball 0.{}ðŸŽ¾**:" + y ,"**Ball 0.{}ðŸŽ¾**: Score **" + x + "** Runs" , ]).format("3"))
+      time.sleep(2)
       x = random.choice(["3","2","3","4","2","1","2","4","1","6","3","4","2","3","6","4","3"])
-      y = random.choice(["Run out","catch out","🚾 Wicket 🚾"])
+      y = random.choice(["Run out","catch out","ðŸš¾ Wicket ðŸš¾"])
       z = random.choice(["dot ball","wide ball","no ball"])
-      if a.text == "Ball 0.1🎾: no ball" or a.text == "Ball 0.1🎾: wide ball":
-        a = message.reply(random.choice([ "**Ball 0.{}🎾**: Score **" + x + "** Runs","**Ball 0.{}🎾**: " + z, "**Ball 0.{}🎾**: Score **" + x + "** Runs" ,"**Ball 0.{}🎾**: " + z,"**Ball 0.{}🎾**:" + y ,"**Ball 0.{}🎾**: Score **" + x + "** Runs" , ]).format("3"))
+      if a.text == "Ball 0.1ðŸŽ¾: no ball" or a.text == "Ball 0.1ðŸŽ¾: wide ball":
+        a = message.reply(random.choice([ "**Ball 0.{}ðŸŽ¾**: Score **" + x + "** Runs","**Ball 0.{}ðŸŽ¾**: " + z, "**Ball 0.{}ðŸŽ¾**: Score **" + x + "** Runs" ,"**Ball 0.{}ðŸŽ¾**: " + z,"**Ball 0.{}ðŸŽ¾**:" + y ,"**Ball 0.{}ðŸŽ¾**: Score **" + x + "** Runs" , ]).format("3"))
+        time.sleep(2)
         x = random.choice(["3","2","3","4","2","1","2","4","1","6","3","4","2","3","6","4","3"])
-        y = random.choice(["Run out","catch out","🚾 Wicket 🚾"])
+        y = random.choice(["Run out","catch out","ðŸš¾ Wicket ðŸš¾"])
         z = random.choice(["dot ball"])
-        if a.text == "Ball 0.1🎾: no ball" or a.text == "Ball 0.1🎾: wide ball":
-          a = message.reply(random.choice([ "**Ball 0.{}🎾**: Score **" + x + "** Runs","**Ball 0.{}🎾**: " + z, "**Ball 0.{}🎾**: Score **" + x + "** Runs" ,"**Ball 0.{}🎾**: " + z,"**Ball 0.{}🎾**:" + y ,"**Ball 0.{}🎾**: Score **" + x + "** Runs" , ]).format("3"))
+        if a.text == "Ball 0.1ðŸŽ¾: no ball" or a.text == "Ball 0.1ðŸŽ¾: wide ball":
+          a = message.reply(random.choice([ "**Ball 0.{}ðŸŽ¾**: Score **" + x + "** Runs","**Ball 0.{}ðŸŽ¾**: " + z, "**Ball 0.{}ðŸŽ¾**: Score **" + x + "** Runs" ,"**Ball 0.{}ðŸŽ¾**: " + z,"**Ball 0.{}ðŸŽ¾**:" + y ,"**Ball 0.{}ðŸŽ¾**: Score **" + x + "** Runs" , ]).format("3"))
+          time.sleep(2)
           x = random.choice(["3","2","3","4","2","1","2","4","1","6","3","4","2","3","6","4","3"])
-          y = random.choice(["Run out","catch out","🚾 Wicket 🚾"])
+          y = random.choice(["Run out","catch out","ðŸš¾ Wicket ðŸš¾"])
           z = random.choice(["dot ball","wide ball","no ball"])
-      a = message.reply(random.choice([ "**Ball 0.{}🎾**: Score **" + x + "** Runs","**Ball 0.{}🎾**: " + z, "**Ball 0.{}🎾**: Score **" + x + "** Runs" ,"**Ball 0.{}🎾**: " + z,"**Ball 0.{}🎾**:" + y ,"**Ball 0.{}🎾**: Score **" + x + "** Runs" , ]).format("4"))
+      a = message.reply(random.choice([ "**Ball 0.{}ðŸŽ¾**: Score **" + x + "** Runs","**Ball 0.{}ðŸŽ¾**: " + z, "**Ball 0.{}ðŸŽ¾**: Score **" + x + "** Runs" ,"**Ball 0.{}ðŸŽ¾**: " + z,"**Ball 0.{}ðŸŽ¾**:" + y ,"**Ball 0.{}ðŸŽ¾**: Score **" + x + "** Runs" , ]).format("4"))
+      time.sleep(2)
       x = random.choice(["3","2","3","4","2","1","2","4","1","6","3","4","2","3","6","4","3"])
-      y = random.choice(["Run out","catch out","🚾 Wicket 🚾"])
+      y = random.choice(["Run out","catch out","ðŸš¾ Wicket ðŸš¾"])
       z = random.choice(["dot ball","wide ball","no ball"])
-      if a.text == "Ball 0.1🎾: no ball" or a.text == "Ball 0.1🎾: wide ball":
-        a = message.reply(random.choice([ "**Ball 0.{}🎾**: Score **" + x + "** Runs","**Ball 0.{}🎾**: " + z, "**Ball 0.{}🎾**: Score **" + x + "** Runs" ,"**Ball 0.{}🎾**: " + z,"**Ball 0.{}🎾**:" + y ,"**Ball 0.{}🎾**: Score **" + x + "** Runs" , ]).format("4"))
+      if a.text == "Ball 0.1ðŸŽ¾: no ball" or a.text == "Ball 0.1ðŸŽ¾: wide ball":
+        a = message.reply(random.choice([ "**Ball 0.{}ðŸŽ¾**: Score **" + x + "** Runs","**Ball 0.{}ðŸŽ¾**: " + z, "**Ball 0.{}ðŸŽ¾**: Score **" + x + "** Runs" ,"**Ball 0.{}ðŸŽ¾**: " + z,"**Ball 0.{}ðŸŽ¾**:" + y ,"**Ball 0.{}ðŸŽ¾**: Score **" + x + "** Runs" , ]).format("4"))
+        time.sleep(2)
         x = random.choice(["3","2","3","4","2","1","2","4","1","6","3","4","2","3","6","4","3"])
-        y = random.choice(["Run out","catch out","🚾 Wicket 🚾"])
+        y = random.choice(["Run out","catch out","ðŸš¾ Wicket ðŸš¾"])
         z = random.choice(["dot ball"])
-        if a.text == "Ball 0.1🎾: no ball" or a.text == "Ball 0.1🎾: wide ball":
-          a = message.reply(random.choice([ "**Ball 0.{}🎾**: Score **" + x + "** Runs","**Ball 0.{}🎾**: " + z, "**Ball 0.{}🎾**: Score **" + x + "** Runs" ,"**Ball 0.{}🎾**: " + z,"**Ball 0.{}🎾**:" + y ,"**Ball 0.{}🎾**: Score **" + x + "** Runs" , ]).format("4"))
+        if a.text == "Ball 0.1ðŸŽ¾: no ball" or a.text == "Ball 0.1ðŸŽ¾: wide ball":
+          a = message.reply(random.choice([ "**Ball 0.{}ðŸŽ¾**: Score **" + x + "** Runs","**Ball 0.{}ðŸŽ¾**: " + z, "**Ball 0.{}ðŸŽ¾**: Score **" + x + "** Runs" ,"**Ball 0.{}ðŸŽ¾**: " + z,"**Ball 0.{}ðŸŽ¾**:" + y ,"**Ball 0.{}ðŸŽ¾**: Score **" + x + "** Runs" , ]).format("4"))
+          time.sleep(2)
           x = random.choice(["3","2","3","4","2","1","2","4","1","6","3","4","2","3","6","4","3"])
-          y = random.choice(["Run out","catch out","🚾 Wicket 🚾"])
+          y = random.choice(["Run out","catch out","ðŸš¾ Wicket ðŸš¾"])
           z = random.choice(["dot ball","wide ball","no ball"])
-      a = message.reply(random.choice([ "**Ball 0.{}🎾**: Score **" + x + "** Runs","**Ball 0.{}🎾**: " + z, "**Ball 0.{}🎾**: Score **" + x + "** Runs" ,"**Ball 0.{}🎾**: " + z,"**Ball 0.{}🎾**:" + y ,"**Ball 0.{}🎾**: Score **" + x + "** Runs" , ]).format("5"))
+      a = message.reply(random.choice([ "**Ball 0.{}ðŸŽ¾**: Score **" + x + "** Runs","**Ball 0.{}ðŸŽ¾**: " + z, "**Ball 0.{}ðŸŽ¾**: Score **" + x + "** Runs" ,"**Ball 0.{}ðŸŽ¾**: " + z,"**Ball 0.{}ðŸŽ¾**:" + y ,"**Ball 0.{}ðŸŽ¾**: Score **" + x + "** Runs" , ]).format("5"))
+      time.sleep(2)
       x = random.choice(["3","2","3","4","2","1","2","4","1","6","3","4","2","3","6","4","3"])
-      y = random.choice(["Run out","catch out","🚾 Wicket 🚾"])
+      y = random.choice(["Run out","catch out","ðŸš¾ Wicket ðŸš¾"])
       z = random.choice(["dot ball","wide ball","no ball"])
-      if a.text == "Ball 0.1🎾: no ball" or a.text == "Ball 0.1🎾: wide ball":
-        a = message.reply(random.choice([ "**Ball 0.{}🎾**: Score **" + x + "** Runs","**Ball 0.{}🎾**: " + z, "**Ball 0.{}🎾**: Score **" + x + "** Runs" ,"**Ball 0.{}🎾**: " + z,"**Ball 0.{}🎾**:" + y ,"**Ball 0.{}🎾**: Score **" + x + "** Runs" , ]).format("5"))
+      if a.text == "Ball 0.1ðŸŽ¾: no ball" or a.text == "Ball 0.1ðŸŽ¾: wide ball":
+        a = message.reply(random.choice([ "**Ball 0.{}ðŸŽ¾**: Score **" + x + "** Runs","**Ball 0.{}ðŸŽ¾**: " + z, "**Ball 0.{}ðŸŽ¾**: Score **" + x + "** Runs" ,"**Ball 0.{}ðŸŽ¾**: " + z,"**Ball 0.{}ðŸŽ¾**:" + y ,"**Ball 0.{}ðŸŽ¾**: Score **" + x + "** Runs" , ]).format("5"))
+        time.sleep(2)
         x = random.choice(["3","2","3","4","2","1","2","4","1","6","3","4","2","3","6","4","3"])
-        y = random.choice(["Run out","catch out","🚾 Wicket 🚾"])
+        y = random.choice(["Run out","catch out","ðŸš¾ Wicket ðŸš¾"])
         z = random.choice(["dot ball"])
-        if a.text == "Ball 0.1🎾: no ball" or a.text == "Ball 0.1🎾: wide ball":
-          a = message.reply(random.choice([ "**Ball 0.{}🎾**: Score **" + x + "** Runs","**Ball 0.{}🎾**: " + z, "**Ball 0.{}🎾**: Score **" + x + "** Runs" ,"**Ball 0.{}🎾**: " + z,"**Ball 0.{}🎾**:" + y ,"**Ball 0.{}🎾**: Score **" + x + "** Runs" , ]).format("5"))
+        if a.text == "Ball 0.1ðŸŽ¾: no ball" or a.text == "Ball 0.1ðŸŽ¾: wide ball":
+          a = message.reply(random.choice([ "**Ball 0.{}ðŸŽ¾**: Score **" + x + "** Runs","**Ball 0.{}ðŸŽ¾**: " + z, "**Ball 0.{}ðŸŽ¾**: Score **" + x + "** Runs" ,"**Ball 0.{}ðŸŽ¾**: " + z,"**Ball 0.{}ðŸŽ¾**:" + y ,"**Ball 0.{}ðŸŽ¾**: Score **" + x + "** Runs" , ]).format("5"))
+          time.sleep(2)
           x = random.choice(["3","2","3","4","2","1","2","4","1","6","3","4","2","3","6","4","3"])
-          y = random.choice(["Run out","catch out","🚾 Wicket 🚾"])
+          y = random.choice(["Run out","catch out","ðŸš¾ Wicket ðŸš¾"])
           z = random.choice(["dot ball","wide ball","no ball"])
-      a = message.reply(random.choice([ "**Ball 0.{}🎾**: Score **" + x + "** Runs","**Ball 0.{}🎾**: " + z, "**Ball 0.{}🎾**: Score **" + x + "** Runs" ,"**Ball 0.{}🎾**: " + z,"**Ball 0.{}🎾**:" + y ,"**Ball 0.{}🎾**: Score **" + x + "** Runs" , ]).format("6"))
+      a = message.reply(random.choice([ "**Ball 0.{}ðŸŽ¾**: Score **" + x + "** Runs","**Ball 0.{}ðŸŽ¾**: " + z, "**Ball 0.{}ðŸŽ¾**: Score **" + x + "** Runs" ,"**Ball 0.{}ðŸŽ¾**: " + z,"**Ball 0.{}ðŸŽ¾**:" + y ,"**Ball 0.{}ðŸŽ¾**: Score **" + x + "** Runs" , ]).format("6"))
+      time.sleep(2)
       x = random.choice(["3","2","3","4","2","1","2","4","1","6","3","4","2","3","6","4","3"])
-      y = random.choice(["Run out","catch out","🚾 Wicket 🚾"])
+      y = random.choice(["Run out","catch out","ðŸš¾ Wicket ðŸš¾"])
       z = random.choice(["dot ball","wide ball","no ball"])
-      if a.text == "Ball 0.1🎾: no ball" or a.text == "Ball 0.1🎾: wide ball":
-        a = message.reply(random.choice([ "**Ball 0.{}🎾**: Score **" + x + "** Runs","**Ball 0.{}🎾**: " + z, "**Ball 0.{}🎾**: Score **" + x + "** Runs" ,"**Ball 0.{}🎾**: " + z,"**Ball 0.{}🎾**:" + y ,"**Ball 0.{}🎾**: Score **" + x + "** Runs" , ]).format("6"))
+      if a.text == "Ball 0.1ðŸŽ¾: no ball" or a.text == "Ball 0.1ðŸŽ¾: wide ball":
+        a = message.reply(random.choice([ "**Ball 0.{}ðŸŽ¾**: Score **" + x + "** Runs","**Ball 0.{}ðŸŽ¾**: " + z, "**Ball 0.{}ðŸŽ¾**: Score **" + x + "** Runs" ,"**Ball 0.{}ðŸŽ¾**: " + z,"**Ball 0.{}ðŸŽ¾**:" + y ,"**Ball 0.{}ðŸŽ¾**: Score **" + x + "** Runs" , ]).format("6"))
+        time.sleep(2)
         x = random.choice(["3","2","3","4","2","1","2","4","1","6","3","4","2","3","6","4","3"])
-        y = random.choice(["Run out","catch out","🚾 Wicket 🚾"])
+        y = random.choice(["Run out","catch out","ðŸš¾ Wicket ðŸš¾"])
         z = random.choice(["dot ball"])
-        if a.text == "Ball 0.1🎾: no ball" or a.text == "Ball 0.1🎾: wide ball":
-          a = message.reply(random.choice([ "**Ball 0.{}🎾**: Score **" + x + "** Runs","**Ball 0.{}🎾**: " + z, "**Ball 0.{}🎾**: Score **" + x + "** Runs" ,"**Ball 0.{}🎾**: " + z,"**Ball 0.{}🎾**:" + y ,"**Ball 0.{}🎾**: Score **" + x + "** Runs" , ]).format("6"))
+        if a.text == "Ball 0.1ðŸŽ¾: no ball" or a.text == "Ball 0.1ðŸŽ¾: wide ball":
+          a = message.reply(random.choice([ "**Ball 0.{}ðŸŽ¾**: Score **" + x + "** Runs","**Ball 0.{}ðŸŽ¾**: " + z, "**Ball 0.{}ðŸŽ¾**: Score **" + x + "** Runs" ,"**Ball 0.{}ðŸŽ¾**: " + z,"**Ball 0.{}ðŸŽ¾**:" + y ,"**Ball 0.{}ðŸŽ¾**: Score **" + x + "** Runs" , ]).format("6"))
+          time.sleep(2)
           x = random.choice(["3","2","3","4","2","1","2","4","1","6","3","4","2","3","6","4","3"])
-          y = random.choice(["Run out","catch out","🚾 Wicket 🚾"])
+          y = random.choice(["Run out","catch out","ðŸš¾ Wicket ðŸš¾"])
           z = random.choice(["dot ball","wide ball","no ball"])
     else:
       message.reply('Please write ball number after command!')
