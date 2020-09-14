@@ -1,1 +1,30 @@
--1001250871922
+from pyrogram import Filters,Client 
+from telegram.ext import Updater
+app = Client(session_name = "frif2",api_id = 1446495,api_hash="5d6cc1122ebb7a33b1699b24ac4dbad1", workers = 3)
+s = -1001290422511
+d = int(input("Message ID :  "))
+I = int(input("Second ID :  "))
+@app.on_message(Filters.text & Filters.chat(-1001262096355))
+def send(client, message):
+ m = client.get_messages(chat_id = s,message_ids=I).text.markdown
+ x = message.text
+ if '🎾' in x :
+ 	client.edit_message_text(s,d,"**Live Score : " + x.split(' ')[2] + """
+
+""" + x.split(' ')[0]+ """ 🎾 Running
+
+**""" + m)
+ if '📟' in x :
+    client.edit_message_text(s,d,"**" + message.text + "**" + """
+
+""" + m)
+ if '🚾' in x :
+    client.edit_message_text(s,d, "**" + message.text +"**" + """
+
+""" + m)
+ if ' WIN' in x :
+    client.edit_message_text(s,d,"**" +  message.text +"**" + """
+
+""" + m)
+app.run()
+#client.get_messages(chat_id = s,message_ids=d).text
