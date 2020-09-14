@@ -26,5 +26,17 @@ def send(client, message):
     client.edit_message_text(s,d,"**" +  message.text +"**" + """
 
 """ + m)
+
+ if '🚾' in x :
+  q = client.get_messages(chat_id = s,message_ids=d).text
+  client.edit_message_text(s,d,q.split('Rate : ')[0] + """Rate : """ + x + """
+
+""" + m)
+
 app.run()
-#client.get_messages(chat_id = s,message_ids=d).text
+
+
+q = client.get_messages(chat_id = s,message_ids=d).text
+print(q.split('Rate : ')[0] + """Rate : """ + x + """
+
+""" + m)
