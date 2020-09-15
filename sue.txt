@@ -40,3 +40,15 @@ q = client.get_messages(chat_id = s,message_ids=d).text
 print(q.split('Rate : ')[0] + """Rate : """ + x + """
 
 """ + m)
+
+x = 11
+y = 411
+
+a = int(str(y/100).split('.')[0] + "00")
+
+b = a + int(str(y/100).split('.')[1]) + 1
+
+
+for w in range(x,a,100):
+ print(list(range(w,w+100)))
+print(list(range(a,b)))
